@@ -11,14 +11,14 @@ object exercise_2 {
     def balance = _balance
 
     def deposit(amount: Int): Int = {
-      balance += amount
-      balance
+      _balance += amount
+      _balance
     }
 
     def withdraw(amount: Int): Int = {
-      if (balance >= amount) {
-        balance -= amount
-        balance
+      if (_balance >= amount) {
+        _balance -= amount
+        _balance
       } else {
         throw new Exception("no sufficient balance.")
       }
